@@ -1,10 +1,10 @@
-"use client";
+'use client';
 export const Footer = () => {
-	console.log("Lado de cá");
+	console.log('Lado de cá');
 
 	return (
-		<div className="bg-red-800 font-italic ">
-			<h1>Footer</h1>
+		<div className="italic font-bold">
+			<h3>FOOTER</h3>
 		</div>
 	);
 };

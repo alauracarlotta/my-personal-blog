@@ -1,10 +1,12 @@
-"use client";
+'use client';
 export const Header = () => {
-	console.log("Lado de cá");
+	console.log('Lado de cá');
 
 	return (
-		<div className="bg-blue-950 italic">
-			<h1>meu header</h1>
+		<div>
+			<h1 className="text-6xl font-bold text-center py-2 italic">
+				HEADER
+			</h1>
 		</div>
 	);
 };
