@@ -1,4 +1,5 @@
 import clsx from 'clsx';
+import Link from 'next/link';
 
 export const Header = () => {
 	return (
@@ -12,7 +13,7 @@ export const Header = () => {
 					['xl:text-8xl', 'xl:py-16'],
 				)}
 			>
-				<a href='#'>My Blog</a>
+				<Link href='#'>My Blog</Link>
 			</h1>
 		</header>
 	);
