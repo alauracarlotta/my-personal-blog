@@ -1,7 +1,8 @@
-import type { Metadata } from 'next';
-import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
+import { Container } from '@/components/Container';
+import type { Metadata } from 'next';
+import './globals.css';
 
 export const metadata: Metadata = {
 	title: 'A Laura Carlotta',
@@ -14,11 +15,13 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="pt-BR">
+		<html lang='pt-BR' data-theme='dark'>
 			<body>
-				<Header />
-				<div>{children}</div>
-				<Footer />
+				<Container>
+					<Header />
+					{children}
+					<Footer />
+				</Container>
 			</body>
 		</html>
 	);
