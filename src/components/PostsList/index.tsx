@@ -3,6 +3,7 @@ import { formatDate } from '@/utils/formatDate';
 import clsx from 'clsx';
 import Image from 'next/image';
 import Link from 'next/link';
+import { Heading } from '../Heading';
 
 export const PostsList = async () => {
 	const posts = await postRepository.findAll();
@@ -37,9 +38,9 @@ export const PostsList = async () => {
 								>
 									{formatDate(post.createdAt)}
 								</time>
-								<Link href='#'>
-									<h2 className='text-2xl/tight font-bold'>{post.title}</h2>
-								</Link>
+								<Heading url='#' as='h2'>
+									{post.title}
+								</Heading>
 								<div className='text-justify'>{post.excerpt}</div>
 							</div>
 						</div>
