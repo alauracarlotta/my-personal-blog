@@ -1,6 +1,5 @@
 import { postRepository } from '@/repositories/post';
-import { formatInTimeZone } from 'date-fns-tz';
-import { parseISO } from 'date-fns';
+import { formatDate } from '@/utils/formatDate';
 import Image from 'next/image';
 import Link from 'next/link';
 import clsx from 'clsx';
@@ -9,35 +8,33 @@ export const SinglePost = async () => {
 	const [idFirstPost] = await postRepository.findAll();
 	const singlePost = await postRepository.findById(idFirstPost.id);
 
-	const datePost = parseISO(singlePost.createdAt);
-	const dateUTCFormatted = formatInTimeZone(
-		datePost,
-		'UTC',
-		'dd/MM/yyyy HH:mm',
-	);
-
 	return (
 		<section
 			className={clsx(
-				['grid', 'grid-cols-1', 'gap-5', 'mb-12'],
-				['sm:grid-cols-2'],
+				['grid', 'grid-cols-1', 'gap-5', 'mb-12', 'group'],
+				['sm:grid-cols-2 sm:justify-center'],
 			)}
 		>
-			<Link href='#'>
+			<Link className='w-full h-full overflow-hidden rounded-xl' href='#'>
 				<Image
-					className='rounded-[8px]'
+					className='w-full h-full object-cover object-center group-hover:scale-105 transition'
 					src={singlePost.coverImageUrl}
 					width={1200}
 					height={720}
 					alt={singlePost.title}
+					priority
 				/>
 			</Link>
-			<div>
-				<div className='text-[14px] text-slate-600 pb-5'>
-					{dateUTCFormatted}
-				</div>
+
+			<div className='flex flex-col gap-3 sm:justify-center sm:gap-5'>
+				<time
+					className='text-sm/tight text-slate-600'
+					dateTime={singlePost.createdAt}
+				>
+					{formatDate(singlePost.createdAt)}
+				</time>
 				<Link href='#'>
-					<h2 className='text-2xl/tight font-bold pb-5'>{singlePost.title}</h2>
+					<h1 className='text-2xl/tight font-bold'>{singlePost.title}</h1>
 				</Link>
 				<div className='text-justify'>{singlePost.excerpt}</div>
 			</div>

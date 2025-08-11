@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='pt-BR' data-theme='light'>
-			<body>
+			<body className='vsc-initialized' cz-shortcut-listen='true'>
 				<Container>
 					<Header />
 					{children}
