@@ -25,7 +25,7 @@ export const MainContent = ({
 	};
 	return (
 		<div className={contentClassesNameMap[typePost]}>
-			<PostDate postDate={date} />
+			<PostDate postDate={date} typePost={typePost} />
 			<Heading className='group' url={url} as={as}>
 				{title}
 			</Heading>
