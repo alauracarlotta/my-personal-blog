@@ -1,9 +1,8 @@
 import { postRepository } from '@/repositories/post';
 import { formatDate } from '@/utils/formatDate';
-import Image from 'next/image';
-import Link from 'next/link';
-import clsx from 'clsx';
+import { CoverImage } from '../CoverImage';
 import { Heading } from '../Heading';
+import clsx from 'clsx';
 
 export const SinglePost = async () => {
 	const [idFirstPost] = await postRepository.findAll();
@@ -16,16 +15,12 @@ export const SinglePost = async () => {
 				['sm:grid-cols-2 sm:justify-center'],
 			)}
 		>
-			<Link className='w-full h-full overflow-hidden rounded-xl' href='#'>
-				<Image
-					className='w-full h-full object-cover object-center group-hover:scale-105 transition'
-					src={singlePost.coverImageUrl}
-					width={1200}
-					height={720}
-					alt={singlePost.title}
-					priority
-				/>
-			</Link>
+			<CoverImage
+				type='mainPost'
+				href={'#'}
+				src={singlePost.coverImageUrl}
+				alt={singlePost.title}
+			/>
 
 			<div className='flex flex-col gap-3 sm:justify-center sm:gap-5'>
 				<time

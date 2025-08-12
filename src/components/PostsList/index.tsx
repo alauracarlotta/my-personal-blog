@@ -1,9 +1,8 @@
 import { postRepository } from '@/repositories/post';
 import { formatDate } from '@/utils/formatDate';
-import clsx from 'clsx';
-import Image from 'next/image';
-import Link from 'next/link';
 import { Heading } from '../Heading';
+import { CoverImage } from '../CoverImage';
+import clsx from 'clsx';
 
 export const PostsList = async () => {
 	const posts = await postRepository.findAll();
@@ -22,15 +21,15 @@ export const PostsList = async () => {
 				{postsCopy.map((post) => {
 					return (
 						<div key={post.id}>
-							<Link href='#'>
-								<Image
-									className='rounded-xl mb-4 sm:mb-3 md:mb-2'
+							<div className='group'>
+								<CoverImage
+									type='gridPost'
+									href={'#'}
 									src={post.coverImageUrl}
-									width={1200}
-									height={720}
 									alt={post.title}
 								/>
-							</Link>
+							</div>
+
 							<div className='flex flex-col gap-5'>
 								<time
 									className='text-[14px] text-slate-600'
