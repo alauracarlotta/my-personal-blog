@@ -6,9 +6,15 @@ type HeadingProps = {
 	children: React.ReactNode;
 	url: string;
 	as?: 'h1' | 'h2';
+	className?: string;
 };
 
-export const Heading = ({ children, url, as: Tag = 'h2' }: HeadingProps) => {
+export const Heading = ({
+	children,
+	url,
+	as: Tag = 'h2',
+	className,
+}: HeadingProps) => {
 	const commomClasses = 'font-bold';
 	const headingClassesMap = {
 		h1: 'text-3xl/tight',
@@ -18,7 +24,9 @@ export const Heading = ({ children, url, as: Tag = 'h2' }: HeadingProps) => {
 	return (
 		<Link href={url}>
 			<Tag className={clsx(headingClassesMap[Tag], commomClasses)}>
-				{children}
+				<div className={className}>
+					<div className='group-hover:text-slate-600'>{children}</div>
+				</div>
 			</Tag>
 		</Link>
 	);

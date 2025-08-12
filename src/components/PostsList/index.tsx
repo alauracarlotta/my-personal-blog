@@ -1,7 +1,6 @@
 import { postRepository } from '@/repositories/post';
-import { formatDate } from '@/utils/formatDate';
-import { Heading } from '../Heading';
 import { CoverImage } from '../CoverImage';
+import { MainContent } from '../MainContent';
 import clsx from 'clsx';
 
 export const PostsList = async () => {
@@ -19,29 +18,26 @@ export const PostsList = async () => {
 				)}
 			>
 				{postsCopy.map((post) => {
+					const postLink = `/post/${post.slug}`;
 					return (
 						<div key={post.id}>
 							<div className='group'>
 								<CoverImage
 									type='gridPost'
-									href={'#'}
+									href={postLink}
 									src={post.coverImageUrl}
 									alt={post.title}
 								/>
 							</div>
 
-							<div className='flex flex-col gap-5'>
-								<time
-									className='text-[14px] text-slate-600'
-									dateTime={post.createdAt}
-								>
-									{formatDate(post.createdAt)}
-								</time>
-								<Heading url='#' as='h2'>
-									{post.title}
-								</Heading>
-								<div className='text-justify'>{post.excerpt}</div>
-							</div>
+							<MainContent
+								typePost='postList'
+								date={post.createdAt}
+								url={postLink}
+								as='h2'
+								title={post.title}
+								content={post.excerpt}
+							/>
 						</div>
 					);
 				})}

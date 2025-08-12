@@ -1,7 +1,7 @@
 import { PostsList } from '@/components/PostsList';
 import { SpinLoader } from '@/components/SpinLoader';
 import { Suspense } from 'react';
-import { SinglePost } from '@/components/SinglePost';
+import { PostFeatured } from '@/components/PostFeatured';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -13,7 +13,7 @@ export default async function Home() {
 	return (
 		<>
 			<Suspense fallback={<SpinLoader />}>
-				<SinglePost />
+				<PostFeatured />
 			</Suspense>
 
 			<Suspense fallback={<SpinLoader />}>

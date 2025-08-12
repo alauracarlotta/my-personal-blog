@@ -12,9 +12,7 @@ export class JsonPostRepository implements PostRepository {
 	private async simulateWait() {
 		if (SIMULATE_WAIT_IN_MS <= 0) return;
 
-		await new Promise((resolve) =>
-			setTimeout(resolve, SIMULATE_WAIT_IN_MS)
-		);
+		await new Promise((resolve) => setTimeout(resolve, SIMULATE_WAIT_IN_MS));
 	}
 
 	private async readFromDisc(): Promise<PostModel[]> {
@@ -33,9 +31,9 @@ export class JsonPostRepository implements PostRepository {
 	async findById(id: string): Promise<PostModel> {
 		await this.simulateWait();
 		const posts = await this.findAll();
-		const singlePost = posts.find((post) => post.id === id);
+		const postFeatured = posts.find((post) => post.id === id);
 
-		if (!singlePost) throw new Error('Post não encontrado ');
-		return singlePost;
+		if (!postFeatured) throw new Error('Post não encontrado ');
+		return postFeatured;
 	}
 }

@@ -11,7 +11,7 @@ type CoverImageProps = {
 export const CoverImage = ({ type, href, src, alt }: CoverImageProps) => {
 	const linkImageClassesMap = {
 		mainPost: {
-			link: 'w-full h-full overflow-hidden rounded-xl',
+			link: '',
 			image:
 				'w-full h-full object-cover object-center group-hover:scale-105 transition',
 		},
