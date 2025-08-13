@@ -1,5 +1,5 @@
 import { Heading } from '@/components/Heading';
-import { findAllPublicPosts } from '@/libs/post/queries';
+import { findAllPublicPostsCached } from '@/libs/post/queries';
 import { Metadata } from 'next';
 import React from 'react';
 
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 };
 
 export default async function AboutPage() {
-	const posts = await findAllPublicPosts();
+	const posts = await findAllPublicPostsCached();
 	const post = posts[2];
 	return (
 		<>

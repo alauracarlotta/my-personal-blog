@@ -1,10 +1,10 @@
 import { CoverImage } from '../CoverImage';
 import { MainContent } from '../MainContent';
 import clsx from 'clsx';
-import { findAllPublicPosts } from '@/libs/post/queries';
+import { findAllPublicPostsCached } from '@/libs/post/queries';
 
 export const PostsList = async () => {
-	const posts = await findAllPublicPosts();
+	const posts = await findAllPublicPostsCached();
 
 	return (
 		<div>
