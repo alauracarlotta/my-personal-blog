@@ -6,14 +6,14 @@ export const Header = () => {
 		<header>
 			<h1
 				className={clsx(
-					['text-4xl', 'font-extrabold', 'text-center', 'py-8'],
-					['sm:text-5xl', 'sm:py-10'],
-					['md:text-6xl', 'md:py-12'],
-					['lg:text-7xl', 'lg:py-14'],
-					['xl:text-8xl', 'xl:py-16'],
+					['text-4xl', 'font-extrabold', 'text-center', 'pt-8'],
+					['sm:text-5xl', 'sm:pt-10'],
+					['md:text-6xl', 'md:pt-12'],
+					['lg:text-7xl', 'lg:pt-14'],
+					['xl:text-8xl', 'xl:pt-16'],
 				)}
 			>
-				<Link href='#'>My Blog</Link>
+				<Link href={'/'}>My Blog</Link>
 			</h1>
 		</header>
 	);
