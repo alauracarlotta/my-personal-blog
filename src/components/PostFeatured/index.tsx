@@ -1,12 +1,13 @@
-import { postRepository } from '@/repositories/post';
+import { findAllPublicPosts } from '@/libs/post/queries';
 import { CoverImage } from '../CoverImage';
 import { MainContent } from '../MainContent';
 import clsx from 'clsx';
 
 export const PostFeatured = async () => {
-	const [idFirstPost] = await postRepository.findAll();
-	const postFeatured = await postRepository.findById(idFirstPost.id);
-	const postLink = `/post/${postFeatured.slug}`;
+	const posts = await findAllPublicPosts();
+
+	const post = posts[0];
+	const postLink = `/post/${post.slug}`;
 
 	return (
 		<section
@@ -19,18 +20,18 @@ export const PostFeatured = async () => {
 				<CoverImage
 					type='mainPost'
 					href={postLink}
-					src={postFeatured.coverImageUrl}
-					alt={postFeatured.title}
+					src={post.coverImageUrl}
+					alt={post.title}
 				/>
 			</div>
 
 			<MainContent
 				typePost='postFeatured'
-				date={postFeatured.createdAt}
+				date={post.createdAt}
 				url={postLink}
 				as='h1'
-				title={postFeatured.title}
-				content={postFeatured.excerpt}
+				title={post.title}
+				content={post.excerpt}
 			/>
 		</section>
 	);
