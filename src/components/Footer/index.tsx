@@ -1,8 +1,7 @@
-'use client';
 export const Footer = () => {
 	return (
-		<div className='italic font-bold text-center'>
-			<h3>FOOTER</h3>
+		<div className='text-slate-600 font-bold text-center pb-6'>
+			<span>Copyright &copy; My Blog {new Date().getFullYear()}</span>
 		</div>
 	);
 };
