@@ -29,7 +29,6 @@ export class JsonPostRepository implements PostRepository {
 	}
 
 	async findById(id: string): Promise<PostModel> {
-		await this.simulateWait();
 		const posts = await this.findAllPublic();
 		const postFeatured = posts.find((post) => post.id === id);
 
@@ -38,7 +37,6 @@ export class JsonPostRepository implements PostRepository {
 	}
 
 	async findBySlug(slug: string): Promise<PostModel> {
-		await this.simulateWait();
 		const posts = await this.findAllPublic();
 		const postFeatured = posts.find((post) => post.slug === slug);
 

@@ -15,8 +15,3 @@ export const formatRelativeDate = (rawDate: string): string => {
 		addSuffix: false,
 	});
 };
-
-const rawDate = '2025-04-06T00:24:38.616Z';
-console.log(rawDate);
-console.log(formatDatetime(rawDate));
-console.log(formatRelativeDate(rawDate), 'uiiiiiiii');
