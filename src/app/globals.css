@@ -1,3 +1,16 @@
 @import 'tailwindcss';
+@plugin '@tailwindcss/typography';
 
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+/* EXAMPLES:
+
+@layer utilities {
+	.my-component {
+		text-align: center;
+	}
+}
+
+.my-component a > img {
+	margin: 0 auto;
+}
+
+*/
