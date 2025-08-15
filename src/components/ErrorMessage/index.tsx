@@ -1,6 +1,8 @@
-import clsx from 'clsx';
+// 'use client' => error.tsx
+
 import { ShieldAlertIcon } from 'lucide-react';
 import React from 'react';
+import clsx from 'clsx';
 
 type ErrorMessageProps = {
 	errorTitle: string;
