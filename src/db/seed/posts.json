@@ -12,6 +12,7 @@
 			"updatedAt": "2024-06-03T00:00:00Z",
 			"author": "Isabela Duarte"
 		},
+
 		{
 			"id": "99f8add4-7684-4c16-a316-616271db199e",
 			"title": "Rotina matinal de pessoas altamente eficazes",
@@ -148,112 +149,121 @@
 			"slug": "explorando-o-desconhecido",
 			"excerpt": "Uma jornada por lugares ainda não mapeados.",
 			"content": "Explorando o Desconhecido é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_1.png",
+			"coverImageUrl": "/images/bryen_20.png",
 			"published": true,
 			"createdAt": "2023-12-01T00:00:00Z",
 			"updatedAt": "2023-12-05T00:00:00Z",
 			"author": "Carla Mendes"
 		},
+
 		{
 			"id": "48659ae6-6cd4-4509-9e24-863e7f9f1eff",
 			"title": "Guia Definitivo de Café",
-			"slug": "guia-definitivo-de-café",
+			"slug": "guia-definitivo-de-cafe",
 			"excerpt": "Tudo sobre o mundo do café, da plantação à xícara.",
 			"content": "Guia Definitivo de Café é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_2.png",
+			"coverImageUrl": "/images/bryen_21.png",
 			"published": true,
 			"createdAt": "2023-12-21T00:00:00Z",
 			"updatedAt": "2023-12-22T00:00:00Z",
 			"author": "Ricardo Faria"
 		},
+
 		{
 			"id": "8ceb420c-4ceb-49c9-81e2-327f202102e8",
 			"title": "Minimalismo: Menos é Mais",
-			"slug": "minimalismo-menos-é-mais",
+			"slug": "minimalismo-menos-e-mais",
 			"excerpt": "Como simplificar sua vida e ter mais tempo para o que importa.",
 			"content": "Minimalismo: Menos é Mais é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_3.png",
+			"coverImageUrl": "/images/bryen_22.png",
 			"published": false,
 			"createdAt": "2024-01-10T00:00:00Z",
 			"updatedAt": "2024-01-14T00:00:00Z",
 			"author": "Paula Torres"
 		},
+
 		{
 			"id": "19a65d58-c0a5-4216-9ba2-71ffdd978f22",
 			"title": "Tecnologia Sustentável",
-			"slug": "tecnologia-sustentável",
+			"slug": "tecnologia-sustentavel",
 			"excerpt": "Inovações que ajudam o planeta e facilitam a vida.",
 			"content": "Tecnologia Sustentável é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_4.png",
+			"coverImageUrl": "/images/bryen_23.png",
 			"published": true,
 			"createdAt": "2024-01-30T00:00:00Z",
 			"updatedAt": "2024-02-02T00:00:00Z",
 			"author": "Diego Nascimento"
 		},
+
 		{
 			"id": "eef42bf8-0fdd-47ae-b363-2a74068d3f88",
 			"title": "Fotografia Noturna",
 			"slug": "fotografia-noturna",
 			"excerpt": "Segredos para capturar imagens incríveis à noite.",
 			"content": "Fotografia Noturna é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_5.png",
+			"coverImageUrl": "/images/bryen_24.png",
 			"published": false,
 			"createdAt": "2024-02-19T00:00:00Z",
 			"updatedAt": "2024-02-24T00:00:00Z",
 			"author": "Marcos Vinícius"
 		},
+
 		{
 			"id": "fa5c4744-c9c9-4e89-8e21-64cb52d081af",
 			"title": "Viagem Gastronômica pela Itália",
-			"slug": "viagem-gastronômica-pela-itália",
+			"slug": "viagem-gastronomica-pela-italia",
 			"excerpt": "Sabores e experiências únicas pelas cidades italianas.",
 			"content": "Viagem Gastronômica pela Itália é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_6.png",
+			"coverImageUrl": "/images/bryen_25.png",
 			"published": false,
 			"createdAt": "2024-03-10T00:00:00Z",
 			"updatedAt": "2024-03-11T00:00:00Z",
 			"author": "Amanda Souza"
 		},
+
 		{
 			"id": "9639af5b-2e40-471c-af63-e03eadecb727",
 			"title": "DIY: Decoração com Plantas",
-			"slug": "diy-decoração-com-plantas",
+			"slug": "diy-decoracao-com-plantas",
 			"excerpt": "Traga vida para sua casa com ideias simples e criativas.",
 			"content": "DIY: Decoração com Plantas é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_7.png",
+			"coverImageUrl": "/images/bryen_26.png",
 			"published": true,
 			"createdAt": "2024-03-30T00:00:00Z",
 			"updatedAt": "2024-04-01T00:00:00Z",
 			"author": "Felipe Martins"
 		},
+
 		{
 			"id": "900d028b-78e0-4092-af64-6cc6a9c0ee50",
 			"title": "História do Rock",
-			"slug": "história-do-rock",
+			"slug": "historia-do-rock",
 			"excerpt": "Uma viagem pela evolução do rock and roll.",
 			"content": "História do Rock é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_8.png",
+			"coverImageUrl": "/images/bryen_27.png",
 			"published": true,
 			"createdAt": "2024-04-19T00:00:00Z",
 			"updatedAt": "2024-04-21T00:00:00Z",
 			"author": "Juliana Costa"
 		},
+
 		{
 			"id": "4378b54e-5725-4045-8e7d-cea0f940be17",
 			"title": "Meditação para Iniciantes",
-			"slug": "meditação-para-iniciantes",
+			"slug": "meditacao-para-iniciantes",
 			"excerpt": "Comece sua jornada para a paz interior.",
 			"content": "Meditação para Iniciantes é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_9.png",
+			"coverImageUrl": "/images/bryen_28.png",
 			"published": true,
 			"createdAt": "2024-05-09T00:00:00Z",
 			"updatedAt": "2024-05-10T00:00:00Z",
 			"author": "Rafael Almeida"
 		},
+
 		{
 			"id": "a676ff7d-d9a2-4596-b553-37d9980bd4e2",
 			"title": "Guia de Sobrevivência Urbana",
-			"slug": "guia-de-sobrevivência-urbana",
+			"slug": "guia-de-sobrevivencia-urbana",
 			"excerpt": "Dicas essenciais para viver na cidade grande.",
 			"content": "Guia de Sobrevivência Urbana é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
 			"coverImageUrl": "/images/bryen_11.png",
@@ -262,6 +272,7 @@
 			"updatedAt": "2024-06-20T00:00:00Z",
 			"author": "Thiago Moreira"
 		},
+
 		{
 			"id": "c5fc60af-9b1b-4582-b514-2d6b156de9df",
 			"title": "Segredos do Cinema",
@@ -274,10 +285,11 @@
 			"updatedAt": "2024-07-10T00:00:00Z",
 			"author": "Patrícia Lopes"
 		},
+
 		{
 			"id": "7f5f4f76-ff47-4947-bb78-97cc46709df6",
 			"title": "Culinária Vegana",
-			"slug": "culinária-vegana",
+			"slug": "culinaria-vegana",
 			"excerpt": "Receitas deliciosas sem ingredientes de origem animal.",
 			"content": "Culinária Vegana é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
 			"coverImageUrl": "/images/bryen_13.png",
@@ -298,10 +310,11 @@
 			"updatedAt": "2024-08-19T00:00:00Z",
 			"author": "Fernanda Lima"
 		},
+
 		{
 			"id": "7b2ab876-e0ba-4afa-839a-35677026d208",
 			"title": "Jardinagem para Pequenos Espaços",
-			"slug": "jardinagem-para-pequenos-espaços",
+			"slug": "jardinagem-para-pequenos-espacos",
 			"excerpt": "Cultive plantas mesmo sem um grande quintal.",
 			"content": "Jardinagem para Pequenos Espaços é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
 			"coverImageUrl": "/images/bryen_15.png",
@@ -310,10 +323,11 @@
 			"updatedAt": "2024-09-08T00:00:00Z",
 			"author": "Eduardo Pires"
 		},
+
 		{
 			"id": "0475f87a-f907-4044-b6af-4a8e4883ede1",
 			"title": "História dos Videogames",
-			"slug": "história-dos-videogames",
+			"slug": "historia-dos-videogames",
 			"excerpt": "Da era 8-bits aos gráficos ultra realistas.",
 			"content": "História dos Videogames é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
 			"coverImageUrl": "/images/bryen_16.png",
@@ -322,6 +336,7 @@
 			"updatedAt": "2024-09-27T00:00:00Z",
 			"author": "Sofia Carvalho"
 		},
+
 		{
 			"id": "4cfb52ce-fa54-47f3-8d23-07dd3bc80bcb",
 			"title": "Moda e Sustentabilidade",
@@ -334,6 +349,7 @@
 			"updatedAt": "2024-10-18T00:00:00Z",
 			"author": "Lucas Ribeiro"
 		},
+
 		{
 			"id": "e6db86ec-ec34-4d95-b606-42518584840e",
 			"title": "A Arte da Caligrafia",
@@ -346,6 +362,7 @@
 			"updatedAt": "2024-11-06T00:00:00Z",
 			"author": "Mariana Azevedo"
 		},
+
 		{
 			"id": "ca3238f9-0ad7-460c-b1f4-50bdcee86a67",
 			"title": "Turismo de Aventura",
@@ -358,13 +375,14 @@
 			"updatedAt": "2024-11-28T00:00:00Z",
 			"author": "André Santos"
 		},
+
 		{
 			"id": "f18f66d2-edd8-428a-9bc4-f6567288a5fd",
 			"title": "Astronomia para Curiosos",
 			"slug": "astronomia-para-curiosos",
 			"excerpt": "Descubra os mistérios do universo.",
 			"content": "Astronomia para Curiosos é um tema fascinante que desperta interesse em pessoas do mundo todo. Neste artigo, vamos explorar diferentes perspectivas, abordando desde conceitos básicos até ideias mais avançadas. Ao longo do texto, você encontrará exemplos práticos, dicas úteis e informações relevantes para aplicar no seu dia a dia. Nossa intenção é oferecer não apenas conhecimento, mas também inspiração para que você possa refletir e agir. Independentemente do seu nível de experiência, acreditamos que este conteúdo trará valor e ajudará no seu desenvolvimento pessoal e profissional.",
-			"coverImageUrl": "/images/bryen_19.png",
+			"coverImageUrl": "/images/bryen_29.png",
 			"published": true,
 			"createdAt": "2024-12-15T00:00:00Z",
 			"updatedAt": "2024-12-20T00:00:00Z",
