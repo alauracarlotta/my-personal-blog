@@ -19,6 +19,8 @@ CSR -> Client Side Rendering
 ./ => (pública)
 ./post/[slug] => (pública)
 
+./admin/login (dynamic) - fazer login do usuário
+
 ./admin/post => (privado - dynamic) => Ler (r) lista de posts | deletar (d) (crud)
 ./admin/post/[id] => (privado - dynamic) => Atualizar (u) update
-./admin/post/new => (privado - dynamic) => Ler (r) lista de posts | deletar (d) (crud)
+./admin/post/new => (privado - dynamic) => Criar novo post (c)
