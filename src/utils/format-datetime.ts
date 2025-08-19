@@ -1,4 +1,4 @@
-import { formatDistanceToNow, parseISO } from 'date-fns';
+import { format, formatDistanceToNow, parseISO } from 'date-fns';
 import { formatInTimeZone } from 'date-fns-tz';
 import { ptBR } from 'date-fns/locale';
 
@@ -17,5 +17,12 @@ export const formatRelativeDate = (date: string): string => {
 	return formatDistanceToNow(dateRelative, {
 		locale: ptBR,
 		addSuffix: true,
+	});
+};
+
+export const formatHour = (timestampMs: number): string => {
+	const date = new Date(timestampMs);
+	return format(date, 'HH:mm:ss', {
+		locale: ptBR,
 	});
 };
