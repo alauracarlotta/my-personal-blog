@@ -1,9 +1,21 @@
 import { revalidateExampleActions } from '@/actions/revalidate-example';
 import { formatHour } from '@/utils/format-datetime';
-import clsx from 'clsx';
+// import { revalidatePath, revalidateTag } from 'next/cache';
+
+// revalidatePath('/example/1');
+// revalidateTag('example-1');
 
 export const revalidate = 10;
 export const dynamic = 'force-static';
+/* export const generateStaticParams = async () => {
+	return [];
+}; */
+
+// export const dynamicParams = true;
+
+/* export const generateStaticParams = async () => {
+	return [{ id: '1' }, { id: '2' }];
+}; */
 
 export default async function ExampleDynamicPage({
 	params,
@@ -23,13 +35,7 @@ export default async function ExampleDynamicPage({
 				<form className='py-16' action={revalidateExampleActions}>
 					<input type='hidden' name='path' defaultValue={`/example/${id}`} />
 					<button
-						className={clsx([
-							'bg-amber-500',
-							'p-5',
-							'border-amber-200',
-							'cursor-pointer',
-							'rounded',
-						])}
+						className='bg-amber-500 p-10 border-amber-200 cursor-pointer'
 						type='submit'
 					>
 						Revalidate
