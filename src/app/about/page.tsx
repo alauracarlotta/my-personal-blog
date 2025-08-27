@@ -1,5 +1,5 @@
 import { Heading } from '@/components/Heading';
-import { findAllPublicPostsCached } from '@/libs/post/queries';
+import { findAllPublicPostsCached } from '@/libs/post/queries/public';
 import { Metadata } from 'next';
 import React from 'react';
 

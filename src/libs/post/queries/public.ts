@@ -14,15 +14,7 @@ export const findAllPublicPostsCached = unstable_cache(
 	},
 );
 
-export const findAllNotPublicPostsCached = cache(async () => {
-	return await postRepository.findAllNotPublic();
-});
-
-export const findPostByIdCached = cache(async (id: string) => {
-	return await postRepository.findById(id);
-});
-
-export const findPostBySlugCached = (slug: string) =>
+export const findPublicPostBySlugCached = (slug: string) =>
 	unstable_cache(
 		cache(async (slug: string) => {
 			const post = await postRepository

@@ -1,4 +1,4 @@
-import { findPostBySlugCached } from '@/libs/post/queries';
+import { findPublicPostBySlugCached } from '@/libs/post/queries/public';
 import { Metadata } from 'next';
 
 type PostSlugPageProps = {
@@ -9,7 +9,7 @@ export const generateMetadata = async ({
 	params,
 }: PostSlugPageProps): Promise<Metadata> => {
 	const { slug } = await params;
-	const post = await findPostBySlugCached(slug);
+	const post = await findPublicPostBySlugCached(slug);
 	return {
 		title: post.title,
 		description: post.excerpt,
@@ -40,7 +40,7 @@ export default async function PostSlugPage({ params }: PostSlugPageProps) {
 	/* fAZENDO O TRY/CATCH NA FUNÇÃO findPostBySlugCached */
 
 	const { slug } = await params;
-	const post = await findPostBySlugCached(slug);
+	const post = await findPublicPostBySlugCached(slug);
 
 	return (
 		<>
