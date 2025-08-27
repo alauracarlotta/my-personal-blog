@@ -24,13 +24,23 @@ export default async function ExampleDynamicPage({
 }) {
 	const { id } = await params;
 	const hour = formatHour(Date.now());
+	// const response = await fetch('http://randomuser.me/api/?results=1', {
+	// 	next: {
+	// 		revalidate: 20,
+	// 		tags: ['randomuser'],
+	// 	},
+	// });
+	// const json = await response.json();
+	// const name = json.results[0].name.first;
+	// console.log(json.results[0].name.first);
+
 	return (
 		<>
 			<main>
 				<div>Estamos em example</div>
 				<div>Veja só</div>
 				<div>
-					{hour} (ID: {id})
+					{hour} (ID: {id}){/* {hour} (ID: {id}) | <div>nome: {name}</div> */}
 				</div>
 				<form className='py-16' action={revalidateExampleActions}>
 					<input type='hidden' name='path' defaultValue={`/example/${id}`} />
