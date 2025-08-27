@@ -1,7 +1,7 @@
 // 'use cache'; => file level
 
 import { revalidateExampleActions } from '@/actions/revalidate-example';
-import { /* formatHour, */ formatHourCached } from '@/utils/format-datetime';
+import { /* formatHour, */ formatHourCached } from '@/utils/_format-datetime';
 import clsx from 'clsx';
 // import { unstable_cacheLife as cacheLife } from 'next/cache';
 // import { unstable_cacheTag as cacheTag } from 'next/cache';

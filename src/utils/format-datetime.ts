@@ -1,8 +1,6 @@
 import { format, formatDistanceToNow, parseISO } from 'date-fns';
 import { formatInTimeZone } from 'date-fns-tz';
 import { ptBR } from 'date-fns/locale';
-// import { unstable_cacheLife as cacheLife } from 'next/cache';
-import { unstable_cacheTag as cacheTag } from 'next/cache';
 
 export const formatDatetime = (date: string): string => {
 	const datePost = parseISO(date);
@@ -27,11 +25,4 @@ export const formatHour = (timestampMs: number): string => {
 	return format(date, 'HH:mm:ss', {
 		locale: ptBR,
 	});
-};
-
-export const formatHourCached = async () => {
-	'use cache';
-	// cacheLife('seconds');
-	cacheTag('formatHourCached');
-	return formatHour(Date.now());
 };

@@ -10,5 +10,7 @@ export const revalidateExampleActions = async (formData: FormData) => {
 	// revalidatePath(path);
 	// revalidateTag('randomuser');
 	// revalidateTag('ExampleDynamicPage');
-	revalidateTag('formatHourCached');
+	// revalidateTag('formatHourCached');
+	revalidateTag('posts'); // home
+	revalidateTag('post-explorando-o-desconhecido'); // single
 };
