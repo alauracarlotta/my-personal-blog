@@ -3,10 +3,15 @@ import { PostRepository } from './post-repository';
 import { drizzleDb } from '@/db/drizzle';
 import { postsTable } from '@/db/drizzle/schemas';
 import { eq, sql } from 'drizzle-orm';
+import { logColor } from '@/utils/log-color';
+import { asyncDelay } from '@/utils/async-delay';
+import { SIMULATE_WAIT_IN_MS } from '@/libs/constants';
 
 export class DrizzlePostRepository implements PostRepository {
 	async findAll(): Promise<PostModel[]> {
-		console.log('D findAll');
+		logColor('D findAll');
+		await asyncDelay(SIMULATE_WAIT_IN_MS, true);
+
 		const posts = await drizzleDb.query.posts.findMany({
 			orderBy: (posts, { asc }) => asc(posts.createdAt),
 		});
@@ -15,7 +20,9 @@ export class DrizzlePostRepository implements PostRepository {
 	}
 
 	async findById(id: string): Promise<PostModel> {
-		console.log('D findById');
+		logColor('D findById');
+		await asyncDelay(SIMULATE_WAIT_IN_MS, true);
+
 		const post = await drizzleDb.query.posts.findFirst({
 			where: (posts, { eq }) => eq(posts.id, id),
 		});
@@ -26,7 +33,9 @@ export class DrizzlePostRepository implements PostRepository {
 	}
 
 	async findAllPublic(): Promise<PostModel[]> {
-		console.log('D findAllPublic');
+		logColor('D findAllPublic');
+		await asyncDelay(SIMULATE_WAIT_IN_MS, true);
+
 		const posts = await drizzleDb.query.posts.findMany({
 			orderBy: (posts, { asc }) => asc(posts.createdAt),
 			where: (posts, { eq }) => eq(posts.published, true),
@@ -36,7 +45,8 @@ export class DrizzlePostRepository implements PostRepository {
 	}
 
 	async findAllNotPublic(): Promise<PostModel[]> {
-		console.log('D findAllNotPublic');
+		logColor('D findAllNotPublic');
+		await asyncDelay(SIMULATE_WAIT_IN_MS, true);
 
 		const query = drizzleDb.select().from(postsTable);
 		query.where(eq(postsTable.published, false));
@@ -49,7 +59,8 @@ export class DrizzlePostRepository implements PostRepository {
 	}
 
 	async findBySlugPublic(slug: string): Promise<PostModel> {
-		console.log('D findBySlugPublic');
+		logColor('D findBySlugPublic');
+		await asyncDelay(SIMULATE_WAIT_IN_MS, true);
 
 		const post = await drizzleDb.query.posts.findFirst({
 			where: (posts, { eq, and }) =>

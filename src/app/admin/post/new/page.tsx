@@ -1,6 +1,7 @@
-import { findAllPostsAdmin } from '@/libs/post/queries/admin';
-import { formatDatetime } from '@/utils/format-datetime';
+import PostsListAdmin from '@/components/PostsListAdmin';
+import { SpinLoader } from '@/components/SpinLoader';
 import { Metadata } from 'next';
+import { Suspense } from 'react';
 
 export const dynamic = 'force-dynamic';
 
@@ -9,19 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default async function AdminPostNewPage() {
-	const posts = await findAllPostsAdmin();
-
 	return (
-		<div>
-			{posts.map((post) => {
-				return (
-					<div key={post.id} className='py-4'>
-						<div className='text-3xl'>Título: {post.title}</div>
-						<div>Slug: {post.slug}</div>
-						<div>Data: {formatDatetime(post.createdAt)}</div>
-					</div>
-				);
-			})}
-		</div>
+		<Suspense fallback={<SpinLoader />}>
+			<PostsListAdmin />;
+		</Suspense>
 	);
 }
